@@ -38,7 +38,6 @@ rv32k_sc_tests = \
   orn-01 \
   pack-01 \
   packh-01 \
-  packu-01 \
   rev.b-01 \
   rev8-01 \
   rol-01 \

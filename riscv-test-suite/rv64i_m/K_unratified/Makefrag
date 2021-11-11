@@ -43,8 +43,6 @@ rv64k_sc_tests = \
   orn-01 \
   pack-01 \
   packh-01 \
-  packu-01 \
-  packuw-01 \
   packw-01 \
   rev.b-01 \
   rev8-01 \
