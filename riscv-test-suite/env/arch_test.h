@@ -791,6 +791,12 @@ inst rs2, imm_val(rs1)                                                      ;\
 nop                                                                         ;\
 nop                                                                         
 
+#define TEST_CBO(swreg,rs1,inst,imm_val,offset)   ;\
+addi rs1,swreg,offset*2+imm_val                                                     ;\
+inst rs1                                                      ;\
+nop                                                                         ;\
+nop     
+
 #define TEST_LOAD(swreg,testreg,index,rs1,destreg,imm_val,offset,inst,adj)   ;\
 LA(rs1,rvtest_data+(index*4)+adj-imm_val)                                      ;\
 inst destreg, imm_val(rs1)                                                   ;\
